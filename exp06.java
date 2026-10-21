@@ -1,4 +1,4 @@
-public class exp6 {
+public class exp06 {
     public static void main(String[] args) {
         int a = 10;
         int b = 0;

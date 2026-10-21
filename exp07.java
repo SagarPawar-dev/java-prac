@@ -25,7 +25,7 @@ class Circle extends Shape implements Drawable {
     }
 }
 
-public class exp7 {
+public class exp07 {
     public static void main(String[] args) {
         Circle c = new Circle(5.0);
         c.draw();

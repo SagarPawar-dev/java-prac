@@ -29,7 +29,7 @@ class Result extends Marks {
     }
 }
 
-public class exp5 {
+public class exp05 {
     public static void main(String[] args) {
         Result r = new Result();
         r.setStudent(12, "Sagar");

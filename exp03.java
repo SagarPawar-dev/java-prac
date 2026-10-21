@@ -24,7 +24,7 @@ class Student implements Result {
     }
 }
 
-public class exp3 {
+public class exp03 {
     public static void main(String[] args) {
         Student s = new Student();
         s.getMarks(85, 90, 80);

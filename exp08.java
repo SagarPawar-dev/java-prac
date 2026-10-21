@@ -19,7 +19,7 @@ class CollegeStudent {
     }
 }
 
-public class exp8 {
+public class exp08 {
     public static void main(String[] args) {
         CollegeStudent s1 = new CollegeStudent(1, "Sagar");
         CollegeStudent s2 = new CollegeStudent(2, "Amit");

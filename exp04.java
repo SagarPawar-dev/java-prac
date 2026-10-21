@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class exp4 {
+public class exp04 {
     public static void main(String[] args) {
         try {
             // Step 1: Load and register MySQL JDBC driver
