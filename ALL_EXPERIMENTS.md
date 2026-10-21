@@ -159,9 +159,23 @@ Percentage: 85.0%
 ### Aim:
 Write a Java program that connects to a database using JDBC.
 
-> **Note for paper:** Teachers look for the **standard 5 steps of JDBC** inside a `try-catch` block.
+> **Note for paper:** Teachers look for the **SQL table queries** and the **standard 5 steps of JDBC** inside a `try-catch` block.
 
-### Code:
+### 1. SQL Script (`database.sql`):
+```sql
+CREATE DATABASE IF NOT EXISTS testdb;
+USE testdb;
+
+CREATE TABLE IF NOT EXISTS student (
+    id INT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+INSERT INTO student VALUES (101, 'Rahul');
+INSERT INTO student VALUES (102, 'Amit');
+```
+
+### 2. Java Code (`exp04.java`):
 ```java
 import java.sql.*;
 

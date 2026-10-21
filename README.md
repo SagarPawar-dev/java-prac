@@ -11,7 +11,7 @@ A complete, clean, paper-exam-ready collection of all 15 practical experiments.
 | **01** | [`exp01.java`](./exp01.java) | Constructor overloading to calculate area of a rectangle |
 | **02** | [`exp02.java`](./exp02.java) | Display employee details using Scanner class |
 | **03** | [`exp03.java`](./exp03.java) | Implement Interface using `extends` keyword (Marks of 3 subjects) |
-| **04** | [`exp04.java`](./exp04.java) | Connect to a database using JDBC |
+| **04** | [`exp04/`](./exp04/) ([Java](./exp04/exp04.java), [SQL](./exp04/database.sql)) | Connect to a database using JDBC |
 | **05** | [`exp05.java`](./exp05.java) | Demonstration of Multilevel Inheritance for a student record |
 | **06** | [`exp06.java`](./exp06.java) | Exception Handling to demonstrate `ArithmeticException` (division by zero) |
 | **07** | [`exp07.java`](./exp07.java) | Abstract Classes and Interfaces using Shape Area Calculator |
