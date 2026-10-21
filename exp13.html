@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exp 13 - Form Validation</title>
+</head>
+<body>
+    <h2>Form Validation</h2>
+
+    <form onsubmit="return validateForm()">
+        Name: <input type="text" id="uname"><br><br>
+        Email: <input type="text" id="uemail"><br><br>
+        Password: <input type="password" id="upass"><br><br>
+        <input type="submit" value="Register">
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("uname").value;
+            var email = document.getElementById("uemail").value;
+            var pass = document.getElementById("upass").value;
+
+            if (name.trim() == "") {
+                alert("Name cannot be empty!");
+                return false;
+            }
+
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                alert("Please enter a valid email containing '@' and '.'");
+                return false;
+            }
+
+            if (pass.length < 6) {
+                alert("Password must be at least 6 characters long!");
+                return false;
+            }
+
+            alert("Validation successful! Form submitted.");
+            return true;
+        }
+    </script>
+</body>
+</html>

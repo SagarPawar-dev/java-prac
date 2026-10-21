@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exp 12 - DOM Manipulation</title>
+</head>
+<body>
+    <h2>JavaScript Button Click Demo</h2>
+
+    <!-- Paragraph to be changed -->
+    <p id="msg">This is the original paragraph content.</p>
+
+    <!-- Button triggering JS function -->
+    <button onclick="changeText()">Click Me to Change Content</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("msg").innerHTML =
+                "Content has been successfully changed by JavaScript!";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exp 14 - Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 { color: #333; margin-bottom: 5px; }
+        p { color: #666; font-size: 14px; }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Sagar Sharma</h2>
+        <p>Computer Engineering Student</p>
+        <p><strong>Skills:</strong> Java, HTML, CSS, JS</p>
+
+        <button onclick="toggleBio()">Show Contact Info</button>
+        <p id="contact" style="display: none; margin-top: 15px; color: green;">
+            Email: sagar@example.com <br> Phone: +91 9876543210
+        </p>
+    </div>
+
+    <script>
+        function toggleBio() {
+            var info = document.getElementById("contact");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
