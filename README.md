@@ -1,3 +1,32 @@
+import java.sql.*;
+
+public class exp04 {
+    public static void main(String[] args) {
+        try {
+            Connection con = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/",
+                "root",
+                "your_password"
+            );
+
+            Statement st = con.createStatement();
+
+            ResultSet rs = st.executeQuery("SELECT 10 + 20");
+
+            if (rs.next()) {
+                System.out.println("Result: " + rs.getInt(1));
+            }
+
+            rs.close();
+            st.close();
+            con.close();
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
 # Java & Web Practical Exam Syllabus (SE Div A)
 
 A complete, clean, paper-exam-ready collection of all 15 practical experiments.
